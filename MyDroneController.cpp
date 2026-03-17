@@ -26,6 +26,13 @@ int DroneController::getSpeed()
 {
     return this->speed;
 }
+void DroneController::addAltitude(int val){
+    this->altitude+=val;
+
+}
+void DroneController::addSpeed(int val){
+    this->speed+=val;
+}
 int DroneController::execute(const std::string&command,int val){
     auto it=handlers.find(command);
     if(it==handlers.end()){

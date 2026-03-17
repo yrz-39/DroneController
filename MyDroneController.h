@@ -19,7 +19,8 @@ class DroneController
     int getBattery();
     void costBattery(int val);
     void addBattery(int val);
-
+    void addSpeed(int val);
+    void addAltitude(int val);
     //执行函数
     int handleTakeOff(int val);
     int handleSpeedUp(int val);
